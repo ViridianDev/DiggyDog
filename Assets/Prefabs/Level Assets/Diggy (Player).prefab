@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 2856989023951313568}
   - component: {fileID: 201996146003091390}
   m_Layer: 0
-  m_Name: Spot Light (1)
+  m_Name: Headlamp Light Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 4953772770858611327}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.152, z: 0.25}
+  m_LocalPosition: {x: -0, y: 1.152, z: 0.609}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1255,10 +1255,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interact: {fileID: 8884567782414950035}
   raycaster: {fileID: 3615298071064883276}
+  duster: {fileID: 0}
   BF: {fileID: 0}
   fall: {fileID: 0}
   climb: {fileID: 0}
   ender: {fileID: 0}
+  fallingMaterial: {fileID: 0}
   virtualCamera: {fileID: 0}
   camMoveDuration: 0.5
   camOrientation: 44
@@ -1268,6 +1270,7 @@ MonoBehaviour:
   maxZoom: 7
   rb: {fileID: 0}
   movementInput: {x: 0, y: 0}
+  angle: 0
   movementDirection: {x: 0, y: 0, z: 0}
   moveSpeed: 5
   rotationSpeed: 25
