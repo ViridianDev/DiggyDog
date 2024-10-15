@@ -1453,6 +1453,7 @@ public class PlayerController : MonoBehaviour
 
         rb.angularVelocity = Vector3.zero; //static angular velocity to prevent strange collision velocity issues
 
+        /*
         //rewrite !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         if(interact.grabbedObject != null)
         {
@@ -1466,6 +1467,7 @@ public class PlayerController : MonoBehaviour
                interact.grabbedObject.transform.Find("PushEffects").gameObject.SetActive(false);
             }
         }
+        */
 
         if (hasWon && !hasPlayedWinningSequence) //if the player has won the level, initiate the winning sequence
         {

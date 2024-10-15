@@ -80,7 +80,7 @@ public class EnemyMovement : MonoBehaviour
 
             //rotate the enemy over 1 second and increment the time
             transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
-            timeElapsed += Time.deltaTime;
+            timeElapsed += Time.fixedDeltaTime;
             yield return null;
         }
 
